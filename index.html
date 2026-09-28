@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colour Game Demo</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Colour Game Demo</h1>
-    <h2>Virtual Balance: 🪙 10000</h2>
+<div class="container">
 
-    <button>🔴 RED</button>
-    <button>🟢 GREEN</button>
-    <button>🟣 VIOLET</button>
+    <div class="header">
+        <h1>🎨 Colour Game</h1>
+        <p>Virtual Coins Demo</p>
+    </div>
+
+    <div class="balance">
+        🪙 Balance: <span id="balance">10000</span>
+    </div>
+
+    <div class="timer">
+        <span id="timer">30</span>
+    </div>
+
+    <div class="buttons">
+
+        <button class="color-btn red" onclick="selectColor('Red')">
+            🔴 RED
+        </button>
+
+        <button class="color-btn green" onclick="selectColor('Green')">
+            🟢 GREEN
+        </button>
+
+        <button class="color-btn violet" onclick="selectColor('Violet')">
+            🟣 VIOLET
+        </button>
+
+    </div>
+
+    <div class="history">
+        <h3>Game History</h3>
+        <div id="history">
+            No results yet
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
